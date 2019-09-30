@@ -1,0 +1,24 @@
+{
+  "name": "@ultimaker/stylelint-config",
+  "version": "1.0.0",
+  "description": "Mostly sane Stylelint rules for Ultimaker web-based projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ultimaker/stylelint-config.git"
+  },
+  "keywords": [
+    "ultimaker",
+    "stylelint",
+    "stylelint-config"
+  ],
+  "author": "Ultimaker B.V.",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Ultimaker/stylelint-config/issues"
+  },
+  "homepage": "https://github.com/Ultimaker/stylelint-config#readme"
+}
