@@ -4,7 +4,9 @@
   "description": "Mostly sane Stylelint rules for Ultimaker web-based projects",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "lint": "eslint '**/*.js'",
+    "lint:fix": "eslint --fix '**/*.js'"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/Ultimaker/stylelint-config/issues"
   },
-  "homepage": "https://github.com/Ultimaker/stylelint-config#readme"
+  "homepage": "https://github.com/Ultimaker/stylelint-config#readme",
+  "devDependencies": {
+    "@ultimaker/eslint-config": "^1.1.0",
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2"
+  }
 }
