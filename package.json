@@ -27,6 +27,10 @@
     "@ultimaker/eslint-config": "^1.1.0",
     "eslint": "^6.5.1",
     "eslint-config-airbnb": "^18.0.1",
-    "eslint-plugin-import": "^2.18.2"
+    "eslint-plugin-import": "^2.18.2",
+    "stylelint": "^11.0.0"
+  },
+  "peerDependencies": {
+      "stylelint": "^11.0.0"
   }
 }
