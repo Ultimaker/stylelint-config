@@ -4,11 +4,12 @@
   "description": "Mostly sane Stylelint rules for Ultimaker web-based projects",
   "main": "index.js",
   "scripts": {
+    "prepublishOnly": "npm run lint && npm run test",
+    "lint": "eslint '**/*.js'",
+    "lint:fix": "eslint --fix '**/*.js'",
     "test": "npm run test:css && npm run test:scss",
     "test:css": "stylelint --config ./index.js test/styles.css",
-    "test:scss": "stylelint --config ./scss.js test/styles.scss",
-    "lint": "eslint '**/*.js'",
-    "lint:fix": "eslint --fix '**/*.js'"
+    "test:scss": "stylelint --config ./scss.js test/styles.scss"
   },
   "repository": {
     "type": "git",
@@ -26,11 +27,16 @@
   },
   "homepage": "https://github.com/Ultimaker/stylelint-config#readme",
   "devDependencies": {
+    "@typescript-eslint/parser": "^2.3.2",
     "@ultimaker/eslint-config": "^1.1.0",
     "eslint": "^6.5.1",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-plugin-import": "^2.18.2",
-    "stylelint": "^11.0.0"
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^2.1.2",
+    "stylelint": "^11.0.0",
+    "typescript": "^3.6.3"
   },
   "peerDependencies": {
     "stylelint": "^11.0.0"
