@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "Mostly sane Stylelint rules for Ultimaker web-based projects",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "scss.js",
+    "rules/*.js"
+  ],
   "scripts": {
     "prepublishOnly": "npm run lint && npm run test",
     "lint": "eslint '**/*.js'",
