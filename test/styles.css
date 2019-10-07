@@ -1,0 +1,36 @@
+*::before,
+*,
+*::after {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+html {
+    background: transparent
+        linear-gradient(
+            90deg,
+            rgb(8, 8, 8),
+            rgb(64, 64, 64) 90%,
+            rgb(254, 254, 254) 100%
+        );
+    font-family: "Times New Roman", sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: #ff1493;
+    color: #fff;
+}
+
+button[disabled] {
+    background-color: rgb(128, 128, 128);
+    color: rgb(32, 32, 32);
+}
