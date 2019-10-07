@@ -17,6 +17,7 @@ test:
   stage: test
   script:
     - npm run lint
+    - npm test
   except:
     - master
 

@@ -9,7 +9,6 @@
     "rules/*.js"
   ],
   "scripts": {
-    "prepublishOnly": "npm run lint && npm run test",
     "lint": "eslint '**/*.js'",
     "lint:fix": "eslint --fix '**/*.js'",
     "test": "npm run test:css && npm run test:scss",
