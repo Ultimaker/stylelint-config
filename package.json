@@ -4,7 +4,9 @@
   "description": "Mostly sane Stylelint rules for Ultimaker web-based projects",
   "main": "index.js",
   "scripts": {
-    "test": "test",
+    "test": "npm run test:css && npm run test:scss",
+    "test:css": "stylelint --config ./index.js test/styles.css",
+    "test:scss": "stylelint --config ./scss.js test/styles.scss",
     "lint": "eslint '**/*.js'",
     "lint:fix": "eslint --fix '**/*.js'"
   },
@@ -31,6 +33,6 @@
     "stylelint": "^11.0.0"
   },
   "peerDependencies": {
-      "stylelint": "^11.0.0"
+    "stylelint": "^11.0.0"
   }
 }
