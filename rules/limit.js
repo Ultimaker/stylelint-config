@@ -129,7 +129,12 @@ module.exports = {
         // 'comment-word-blacklist': [],
 
         // General
-        'max-nesting-depth': 1,
+        'max-nesting-depth': [
+            1,
+            {
+                severity: 'warning',
+            },
+        ],
         'no-unknown-animations': true,
     },
 };
