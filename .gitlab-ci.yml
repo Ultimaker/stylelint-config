@@ -28,6 +28,8 @@ test:
     - npm --unsafe-perm --access public publish --tag $tag
   only:
     - tags
+  except:
+    - /^.*-alpha.*$/
 
 publish latest:
   <<: *publish
