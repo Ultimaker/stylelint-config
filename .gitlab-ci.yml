@@ -21,10 +21,24 @@ test:
   except:
     - master
 
-publish:
+.publish: &publish
   stage: deploy
   script:
     - npm config set '//registry.npmjs.org/:_authToken' "${NPM_TOKEN}"
-    - npm --unsafe-perm --access public publish
+    - npm --unsafe-perm --access public publish --tag $tag
   only:
     - tags
+
+publish latest:
+  <<: *publish
+  variables:
+    tag: latest
+
+publish alpha:
+  <<: *publish
+  only:
+    - /^.*-alpha.*$/
+  except:
+    - branches
+  variables:
+    tag: alpha
