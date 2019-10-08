@@ -25,7 +25,7 @@ test:
   stage: deploy
   script:
     - npm config set '//registry.npmjs.org/:_authToken' "${NPM_TOKEN}"
-    - npm --unsafe-perm --access public publish --tag $tag
+    - npm publish --tag $tag
   only:
     - tags
   except:
