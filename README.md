@@ -50,10 +50,10 @@ $ git push --follow-tags
 
 ### Example: _alpha_ version
 
-The following example will explicitly set the version to `1.0.0-alpha.4`.
+The following example will explicitly set the version to `1.0.0-alpha.5`.
 
 ```shell
-$ npm version 1.0.0-alpha.4
+$ npm version 1.0.0-alpha.5
 $ git push --follow-tags
 ```
 
