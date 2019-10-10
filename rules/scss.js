@@ -1,5 +1,6 @@
 module.exports = {
     rules: {
+        'at-rule-blacklist': ['debug', 'extend'],
         'at-rule-no-unknown': [
             true,
             {
