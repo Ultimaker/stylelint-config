@@ -1,3 +1,3 @@
 module.exports = {
-    extends: ['./rules/scss.js', './index.js'],
+    extends: ['./index.js', './rules/scss.js'],
 };
