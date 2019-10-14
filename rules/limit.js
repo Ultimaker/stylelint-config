@@ -4,7 +4,7 @@ module.exports = {
     rules: {
         // Color
         'color-named': 'never',
-        // 'color-no-hex': null,
+        'color-no-hex': true,
 
         // Function
         // 'function-blacklist': [],
