@@ -26,8 +26,8 @@ a:hover {
 }
 
 button {
-    background-color: #ff1493;
-    color: #fff;
+    background-color: rgb(255, 14, 147);
+    color: rgb(255, 255, 255);
 }
 
 button[disabled] {

@@ -1,5 +1,8 @@
 @import "partial";
 
+$white: rgb(255, 255, 255);
+$deeppink: rgb(255, 14, 147);
+
 *::before,
 *,
 *::after {
@@ -28,8 +31,8 @@ a {
 }
 
 button {
-    background-color: #ff1493;
-    color: #fff;
+    background-color: $deeppink;
+    color: $white;
 
     &[disabled] {
         background-color: rgb(128, 128, 128);

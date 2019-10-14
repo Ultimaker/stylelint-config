@@ -3,8 +3,8 @@
 module.exports = {
     rules: {
         // Color
-        'color-hex-case': 'lower',
-        'color-hex-length': 'short',
+        'color-hex-case': null,
+        'color-hex-length': null,
 
         // Font family
         'font-family-name-quotes': 'always-where-recommended',
