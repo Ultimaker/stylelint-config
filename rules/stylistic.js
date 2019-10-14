@@ -45,7 +45,7 @@ module.exports = {
         'number-no-trailing-zeros': true,
 
         // String
-        'string-quotes': 'double',
+        'string-quotes': 'single',
 
         // Length
         'length-zero-no-unit': [
