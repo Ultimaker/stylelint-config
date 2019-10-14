@@ -10,7 +10,7 @@ module.exports = {
         'font-family-name-quotes': 'always-where-recommended',
 
         // Font weight
-        'font-weight-notation': 'named-where-possible',
+        'font-weight-notation': 'numeric',
 
         // Function
         'function-comma-newline-after': 'always-multi-line',
