@@ -1,6 +1,6 @@
 {
   "name": "@ultimaker/stylelint-config",
-  "version": "1.0.0-alpha.6",
+  "version": "1.0.0-alpha.7",
   "description": "Mostly sane Stylelint rules for Ultimaker web-based projects",
   "main": "index.js",
   "files": [

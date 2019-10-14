@@ -1,4 +1,4 @@
-@import "partial";
+@import 'partial';
 
 $white: rgb(255, 255, 255);
 $deeppink: rgb(255, 14, 147);
@@ -18,7 +18,7 @@ html {
             rgb(64, 64, 64) 90%,
             rgb(254, 254, 254) 100%
         );
-    font-family: "Times New Roman", sans-serif;
+    font-family: 'Times New Roman', sans-serif;
     line-height: 1.5;
 }
 
