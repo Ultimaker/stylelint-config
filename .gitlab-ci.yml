@@ -18,6 +18,8 @@ test:
 .publish: &publish
   stage: deploy
   script:
+    - npm run lint
+    - npm test
     - npm config set '//registry.npmjs.org/:_authToken' "${NPM_TOKEN}"
     - npm publish --tag $tag
   only:
@@ -29,7 +31,6 @@ publish latest:
   <<: *publish
   only:
     - tags
-    - master
   variables:
     tag: latest
 
