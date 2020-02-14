@@ -32,7 +32,7 @@
   "homepage": "https://github.com/Ultimaker/stylelint-config#readme",
   "devDependencies": {
     "eslint": "^6.5.1",
-    "stylelint": "^11.0.0"
+    "stylelint": "^13.2.0"
   },
   "peerDependencies": {
     "stylelint": "^11.0.0 || ^12.0.0 || ^13.0.0"
