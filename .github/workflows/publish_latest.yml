@@ -3,8 +3,8 @@ name: Publish latest
 on:
   push:
     tags:
-    - "!*-alpha*"
-    - "**"
+      - "!*-alpha*"
+      - "**"
 
 jobs:
   publish:
@@ -12,17 +12,17 @@ jobs:
     env:
       NPM_TOKEN: "${{ secrets.NPM_TOKEN }}"
     steps:
-    - uses: actions/checkout@v1
-    - name: Cache node modules
-      uses: actions/cache@v1
-      with:
-        path: /home/runner/.npm
-        key: npm-cache-${{ hashFiles('**/package-lock.json') }}
-    - uses: actions/setup-node@v1
-      with:
-        node-version: 12.x
-    - run: npm ci
-    - run: npm run lint
-    - run: npm test
-    - run: npm config set '//registry.npmjs.org/:_authToken' "${NPM_TOKEN}"
-    - run: npm publish --tag latest
+      - uses: actions/checkout@v1
+      - name: Cache node modules
+        uses: actions/cache@v1
+        with:
+          path: /home/runner/.npm
+          key: npm-cache-${{ hashFiles('**/package.json') }}
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - run: npm install
+      - run: npm run lint
+      - run: npm test
+      - run: npm config set '//registry.npmjs.org/:_authToken' "${NPM_TOKEN}"
+      - run: npm publish --tag latest
