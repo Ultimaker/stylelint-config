@@ -42,26 +42,7 @@ module.exports = {
 
         // Declaration
         'declaration-no-important': true,
-        'declaration-property-unit-blacklist': {
-            // line-height should be unitless
-            'line-height': [
-                'ch',
-                'em',
-                'ex',
-                'rem',
-                '%',
-                'px',
-                'cm',
-                'mm',
-                'in',
-                'pc',
-                'pt',
-                'vh',
-                'vw',
-                'vmin',
-                'vmax',
-            ],
-        },
+        // 'declaration-property-unit-blacklist': {},
         // 'declaration-property-unit-whitelist': {},
         'declaration-property-value-blacklist': {
             // Only transition what needs to be transitioned
