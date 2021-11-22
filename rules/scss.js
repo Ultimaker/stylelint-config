@@ -1,5 +1,5 @@
 module.exports = {
-    extends: ["stylelint-config-standard-scss"],
+    extends: ['stylelint-config-standard-scss'],
     rules: {
         'at-rule-disallowed-list': ['debug'],
         'at-rule-no-unknown': [
