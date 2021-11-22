@@ -31,6 +31,7 @@ module.exports = {
         'color-function-notation': null,
         'declaration-colon-newline-after': null,
         'indentation': 4,
+        'selector-class-pattern': null,
         'string-quotes': 'single'
     },
 };
