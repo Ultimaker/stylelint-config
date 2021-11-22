@@ -44,7 +44,7 @@ module.exports = {
         'declaration-no-important': true,
         // 'declaration-property-unit-blacklist': {},
         // 'declaration-property-unit-whitelist': {},
-        'declaration-property-value-blacklist': {
+        'declaration-property-value-disallowed-list': {
             // Only transition what needs to be transitioned
             '/^transition/': ['/all/'],
             // On inherited properties, the initial value may be unexpected.
@@ -101,7 +101,7 @@ module.exports = {
         // 'custom-media-pattern': /^[a-z][a-z0-9\-]+[^\-]$/,
 
         // At-rule
-        // 'at-rule-blacklist': [],
+        // 'aat-rule-disallowed-list': [],
         'at-rule-no-vendor-prefix': true,
         // 'at-rule-property-requirelist': {},
         // 'at-rule-whitelist': [],

@@ -1,6 +1,6 @@
 module.exports = {
     rules: {
-        'at-rule-blacklist': ['debug'],
+        'at-rule-disallowed-list': ['debug'],
         'at-rule-no-unknown': [
             true,
             {
