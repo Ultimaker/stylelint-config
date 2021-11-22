@@ -1,4 +1,5 @@
 module.exports = {
+    extends: ["stylelint-config-standard-scss"],
     rules: {
         'at-rule-disallowed-list': ['debug'],
         'at-rule-no-unknown': [
@@ -27,5 +28,9 @@ module.exports = {
                 ],
             },
         ],
+        'color-function-notation': null,
+        'declaration-colon-newline-after': null,
+        'indentation': 4,
+        'string-quotes': 'single'
     },
 };
