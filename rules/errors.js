@@ -10,7 +10,6 @@ module.exports = {
         'font-family-no-missing-generic-family-keyword': true,
 
         // Function
-        'function-calc-no-invalid': true,
         'function-calc-no-unspaced-operator': true,
         'function-linear-gradient-no-nonstandard-direction': true,
 
