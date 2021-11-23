@@ -101,7 +101,7 @@ module.exports = {
         // 'custom-media-pattern': /^[a-z][a-z0-9\-]+[^\-]$/,
 
         // At-rule
-        // 'aat-rule-disallowed-list': [],
+        // 'at-rule-disallowed-list': [],
         'at-rule-no-vendor-prefix': true,
         // 'at-rule-property-requirelist': {},
         // 'at-rule-whitelist': [],
